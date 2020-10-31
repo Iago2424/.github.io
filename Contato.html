@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Iago França - Gestor da Tecnologia da Informação</title>
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="stylesheet" href="Css/Form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Lobster&display=swap" rel="stylesheet">
+        </head>
+        <script src="javascript/javascript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("form").submit(function(){
+                    alert("enviado");
+            });
+        });
+        </script>
+        <body>
+            <div class="header">
+                <h1>IF+</h1>
+            </div>
+            <div class="navbar"> 
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Multimidiaaa.html">Multimidia</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+            </div>
+        <div class="formular">
+            <form name="formuser">
+            <div class="imagesao"> 
+                <img src="_iimagens/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+                <h3>Entrar em contato</h3>
+                <input type="text" name="nome" placeholder="Digite seu nome"><br><br>
+                <input type="text" name="email" placeholder="Digite o seu email"><br><br>
+                <input type="password" name="senha" placeholder="Digite  a sua senha"><br><br>
+                <label>Sexo:</label>
+                <span class="sex">  
+                    <label class="sex1" for="text">Feminino</label>
+                    <input type="radio" class="sex2" name="sexo" value="fem" checked/>
+                </span>
+                <span class="sex">  
+                    <label class="sex1" for="text">Masculino</label>
+                    <input type="radio" class="sex2" name="sexo" value="masc" checked/>
+                </span>
+                <span class="sex">  
+                    <label class="sex1" for="text">Outros</label>
+                    <input type="radio" class="sex2" name="sexo" value="out" checked/>
+                </span><br>
+
+                
+                <label>cidade</label>
+                <select name="Sua cidade" class="sex">
+                        <option value="Selection">Selecionar</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="Rj">Rio de Janeiro</option>
+                        <option value="RS">Porto Alegre</option>
+                        <option value="BA">Salvador</option>
+                    </select><br>
+                
+
+            <div class="Mensagem">
+                <textarea name="Mensagem" id="Mensagem" placeholder="Digite sua Mensagem" required></textarea>
+            </div>
+                
+            <input type="submit" onclick="return validar()">
+            </form>
+        </div>
+        <div class="footer">
+            <h3>São Paulo, Brasil</h3>
+            <p> &copy;2020 - by Iago França <br/></p>
+        </div>
+        </body>
+    </html>
